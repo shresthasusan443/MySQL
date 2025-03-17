@@ -1,0 +1,249 @@
+1. What is MySQL?
+	MySQL is an open-source relational database management system (RDBMS) developed by Oracle Corporation.
+    It uses Structured Query Language (SQL) for database management and is known for its reliability, speed
+     and ease of use. MySQL is widely used for various applications, from small websites to large-scale enterprise 
+     systems.
+
+2. Key features of MySQL:
+	a. Relational Database Management System (RDBMS):
+		MySQL is a relational database management system. This database language is based on the SQL queries to 
+        access and manage the records of the table.
+	b. Open Source:
+        MySQL is an open-source relational database management system, meaning its source code is freely available 
+        for anyone to access, modify, and distribute. 
+    c. Client-Server Architecture:
+        MySQL operates using a client-server architecture, where a server manages the database and responds to
+         requests from client applications. 
+    d. Scalability:
+        MySQL is designed to handle large amounts of data and user requests, making it suitable for various 
+        applications, from small websites to large enterprise systems. 
+    e. Reliability:
+        MySQL is known for its reliability and stability, ensuring data integrity and availability. 
+    f. Replication:
+        MySQL provides built-in replication capabilities, allowing for data replication across multiple servers,
+         enhancing availability and disaster recovery. 
+    g. Data Dictionary:
+        MySQL uses a data dictionary to store metadata about the database, including tables, columns, and relationships,
+         which is essential for managing the database structure and ensuring data integrity. 
+    h. Foreign Key Constraints:
+        MySQL supports foreign key constraints, which enforce referential integrity between tables, ensuring data 
+        consistency and relationships. 
+
+3. common use case of MySQL.
+    a. Content Management Systems (CMS): 
+        MySQL is a popular choice for powering CMS like WordPress, Joomla, and Drupal, managing website content,
+         user accounts, and other data. 
+    b. E-commerce: 
+            It's used to manage product catalogs, customer data, orders, and transactions in online stores. 
+    c. Social Media Platforms:
+             MySQL is used by large social networks like Facebook, X (formerly Twitter), and LinkedIn to store
+             user data, posts, and interactions.
+    d. Telecommunications and Healthcare:
+             MySQL is used in these industries to store and manage customer data, usage data, billing information,
+              patient records, and other sensitive information. 
+    e. Mission-critical Applications: 
+            MySQL's reliability and performance make it suitable for applications that require high availability 
+            and data integrity. 
+    f. Dynamic Websites:
+             MySQL is used to power dynamic websites that require frequent data updates and complex queries.  
+    g. Data Warehousing: 
+            MySQL is used in data warehousing solutions where large volumes of data need to be stored and analyzed.
+
+4. importance of MySQL in database:
+    a.Open Source & Cost-Effective: MySQL is freely available for download, use, and distribution, making it a cost-effective solution for 
+        businesses and developers.
+    b. Scalability & Performance:
+        It can handle large amounts of data and queries without slowing down, making it suitable for high-traffic.  
+        applications and websites. 
+    c. Relational Database Management System (RDBMS):
+        MySQL stores and presents data in a structured, tabular format, organized in rows and columns, which
+        facilitates efficient data organization and retrieval. 
+    d. Security:
+        It offers robust security features, including data encryption, data masking, and authentication plugins,
+        to protect sensitive data. 
+    e. Ease of Use:
+        MySQL is known for its user-friendly interface and relatively simple syntax, making it accessible for both 
+        novice and experienced database users. 
+    f. Cross-Platform Compatibility:
+        MySQL can run on various operating systems, including Windows, macOS, and Linux, providing flexibility for 
+        developers and businesses. 
+    g. Partitioning:
+        MySQL supports partitioning large tables into smaller, more manageable pieces, which can significantly 
+        improve query performance for large datasets. 
+    h. Integration with Web Development Technologies:
+        MySQL integrates seamlessly with popular web development technologies such as PHP and JavaScript, making
+        it a favorite among web developers.      
+
+
+5. Data type in MySQL:
+
+
+A. Numeric datatype (number):
+
+S.N  |           NAME          |    DESCRIPTIONS                       |        Example
+1.          integer              whole number                                 age int; 
+2.          bigInt               whole number but length is big               sales BigInt;
+3.          float(l,p)                with decimal but floating point              discount float(6,1);
+4.          double               with decimal                                 price double;
+5.          TINYINT              smaller than int                             status TINYINT;  [0-255]
+6.          SMALLINT             a small integer. range[-32768 to 32767]      height SMALLINT;
+7.          MEDIUMINT            a medium size integer                        product_id MEDIUMINT;
+8.          DECIMAL(l, p)        number with decimal                           price decimal(5,2)
+
+
+B. String(character) Data types:
+
+S.N  |    NAME         |    DESCRIPTIONS                              |        Example
+1.      CHAR(n)          fixed length string with n characters.          country_code CHAR(2) save upto 2 characters 
+2.      VARCHAR(n)     variable length strings with a max length of n.   name VARCHAR(100) saves upto 100 characters
+
+
+C. Text data type:
+
+S.N  |      NAME            |    DESCRIPTIONS                       |        Example
+1.          TEXT                 stores large amount of text saves        
+                                  upto 65,535 character                      book_synopsis  TEXT
+
+2.          LONGTEXT                   saves upto 4GB                       book_pdf LONGTEXT
+3.          TINYTEXT            Holds text upto 255 character               name TINYTEXT
+4.          MEDIUMTEXT          Holds text upto  16,777,215 character       product_review MEDIUMTEXT
+
+D. Date and Time data type:
+
+.N  |    NAME             |    DESCRIPTIONS                                 |        Example
+1.        DATE                stores the date value YYYY-MM-DD.                      dob DATE
+2.        TIME                stores the time value HH-MM-SS.                      event_time TIME
+3.        DATETIME            stores both date and time.                         created_at DATETIME
+4.        YEAR                stores the year value YYYY.                        eg passed_year YEAR
+5.       TIMESTAMP            Stores both date and time value                    create_at DATETIME
+
+
+E. Binary Datatypes(saves image,files):
+
+S.N  |    NAME                   |    DESCRIPTIONS                              |        Example
+1.       BINARY(n)                   fixed length binary string[n(1-255)] .              profile_picture BINARY(16),password_hash BINARY(16);
+2.       VARBINARY(n)                variable length binary string[n(1-65,535)].         profile_picture VARBINARY(255)
+3.    BLOB(binary large object)      stores large binary data[n(65,535 bytes)].          file BLOB
+4.      TINYBLOB                     stores binary data upto 255bytes                    product_img TINYBLOB
+5.      MEDIUMBLOB                   stores binary data upto 16,777,215 bytes            product_img MEDIUMBLOB
+
+
+F. Boolean data types:
+
+S.N  |    NAME         |    DESCRIPTIONS                              |        Example
+1.      BOOLEAN         represents true/false or 1/0.                        is_active BOOLEANEAN
+
+G. Others Data Types:
+1S.N  |    NAME                   |    DESCRIPTIONS                              |        Example
+
+1.      ENUM                        a string object that can have one value          gender ENUM('male', 'female', 'others')
+                                    from a list of predefined values.	                 NOT NULL DEFAULT 'male';
+2.      SET                          a string object that can have zero or more  
+		                             values from a list of predefined values.          colors SET('pink', 'yellow', 'red'); 		 
+ 
+3.      JSON                        a flexible format for storing data as              setting JSON
+                                    a json object
+
+MySQL STATEMENT:
+1. CREATE: creating table
+	Syntax: CREATE TABLE table_name(col1 datatype, col2 datatype)
+	Example: CREATE TABLE students (
+		 student_id INT AUTO_INCREAMENT PRIMARY KEY,
+		 name VARCHAR(50) NOT NULL
+		 );
+
+2. INSERT INTO: inserting data
+	Syntax: INSERT INTO table_name(col1) VALUES(val1);
+	Example:INSERT INTO students(name) VALUES('mijash');
+
+3. SELECT: retrieving data
+	Syntax:SELECT * FROM table_name;
+	Example:SELECT * FROM students; 
+
+4. UPDATE: updating data
+	Syntax: UPDATE table_name SET col2 = val2 WHERE condition;
+	Example: UPDATE students SET name = 'susan' WHERE student_id = 1;
+
+5. DELETE: deleting data
+	Syntax:  DELETE FROM table_name WHERE condition;
+	Example: DELETE FROM students WHERE student_id = 1;
+
+6. ALTER: modifying table structure
+	Syntax: ALTER TABLE table_name ADD col1 Datatype(n);
+	Example: ALTER TABLE students ADD class int;
+
+7. DROP TABLE: deleting a table
+	Syntax: DROP TABLE table_name;
+	Example: DROP TABLE students;
+
+8. RENAME TABLE: renames one or more tables.
+	Syntax: RENAME TABLE old_table TO new_table;
+	Example: RENAME TABLE students TO customers; 
+
+9. TRUNCATE TABLE: empties a table completely
+	Syntax: TURNCATE TABLE table_name;
+	Example: TURNCATE TABLE customers;
+
+10.CREATE INDEX: improving query performance.
+	Syntax: CREATE INDEX index_name ON table_name(col1, col2, ...)
+	Example: CREATE INDEX idx_std_lname ON students(last_name);
+
+11.GROUP BY: grouping data.
+	Syntax : SELECT col1, count(*) FROM table_name GROUP BY col1;
+	Example : select first_name, count(*) from students group by first_name;
+
+12.ORDER BY Clause[ASC, DESC]: sorting result.
+	Syntax: SELECT col1 FROM table_name ORDER BY col1 DESC;
+	Example: select first_name from students order by first_name DESC;
+
+13. HAVING Clause[COUNT(), AVG(), ...] : filtering group.
+	Syntax: SELECT col1, count() FROM table_name GROUP BY col1 HAVING count()>=2;
+	Example : select first_name, count() from students group by first_name having count()>=2;
+
+15. DISTINCT Keyword: Removing duplicate rows.
+	Syntax: SELECT DISTINCT col1 FROM table_name;
+	Example: select distinct first_name from students;
+
+16. LIMIT: limiting rows.
+    syntax: SELECT * FROM table_name LIMIT number;
+	eg: select * from students limit 5;
+
+17. JOIN: (combining data from multiple table)
+Types of JOIN
+	a. INNER JOIN:
+		Returns records that have matching values in both tables.
+		syntax: SELECT col1, col2, col3, ....
+		  FROM table_name1
+		  INNER JOIN table_name2
+		  ON table_name1.col1 = table_name2.col1;
+
+
+	b. LEFT JOIN/LEFT OUTER JOIN:
+		Returns all records from the left table, and the matched records from the right table.
+		  Syntax: SELECT col1, col2, col3, ....
+		  FROM table_name1
+		  LEFT JOIN table_name2
+		  ON table_name1.col1 = table_name2.col1;
+
+	
+	c. RIGHT JOIN/RIGHT OUTER JOIN:
+		Returns all records from the right table, and the matched records from the left table
+		  Syntax: SELECT col1, col2, col3, ....
+		  FROM table_name1
+		  RIGHT JOIN table_name2
+		  ON table_name1.col1 = table_name2.col1;
+
+	d. FULL JOIN/FULL OUTER JOIN:
+		selects records that have matching values in these columns and the remaining rows from 		both of the tables.
+		 Syntax: SELECT col1, col2, col3, ....
+		  FROM table_name1
+		  FULL JOIN table_name2
+		  ON table_name1.col1 = table_name2.col1;
+
+    e. CROSS JOIN:  
+        joins each row of the first table with each row of second table.
+	     Syntax:SELECT col1, col2, col3, ....
+		  FROM table_name1
+		  CROSS JOIN table_name2
+		  ON table_name1.col1 = table_name2.col1;
+
